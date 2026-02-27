@@ -26,48 +26,48 @@
     />
   </head>
   <body>
-    <div
+    <main
       class="card"
       data-qa="card"
     >
-      <div class="card__image-wrapper">
+      <section class="product">
         <img
           src="./images/imac.jpeg"
-          class="card__image"
+          class="product__image"
           alt="img-req-alt"
         />
-      </div>
+      </section>
 
-      <div class="card__content">
-        <div class="card__title">
+      <section class="description">
+        <div class="description__title">
           APPLE A1419 iMac 27" Retina 5K Monoblock (MNED2UA/A)
         </div>
-        <div class="card__code">Product code: 195434</div>
+        <div class="description__code">Product code: 195434</div>
 
-        <div class="card__wrapper-stars">
-          <div class="card__stars card__stars--4">
-            <div class="card__star"></div>
-            <div class="card__star"></div>
-            <div class="card__star"></div>
-            <div class="card__star"></div>
-            <div class="card__star"></div>
+        <section class="reviews">
+          <div class="stars stars__stars--4">
+            <div class="stars__star"></div>
+            <div class="stars__star"></div>
+            <div class="stars__star"></div>
+            <div class="stars__star"></div>
+            <div class="stars__star"></div>
           </div>
-          <span class="card__reviews">Reviews: 5</span>
-        </div>
+          <span class="reviews__count">Reviews: 5</span>
+        </section>
 
-        <div class="card__wrapper-price">
-          <div class="card__price">Price:</div>
-          <span class="card__amount">$2,199</span>
-        </div>
+        <section class="price">
+          <div class="price__label">Price:</div>
+          <span class="price__value">$2,199</span>
+        </section>
 
         <a
           href="#"
-          class="card__button"
+          class="button"
           data-qa="hover"
         >
           Buy
         </a>
-      </div>
-    </div>
+      </section>
+    </main>
   </body>
 </html>
