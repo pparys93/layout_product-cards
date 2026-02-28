@@ -18,7 +18,7 @@
     <link
       rel="preconnect"
       href="https://fonts.gstatic.com"
-      crossorigin="attr-req-value "
+      crossorigin="anonymous"
     />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
@@ -30,40 +30,44 @@
       class="card"
       data-qa="card"
     >
-      <section class="product">
+      <section class="card__product">
         <img
           src="./images/imac.jpeg"
-          class="product__image"
+          class="card__product-image"
           alt="img-req-alt"
         />
       </section>
 
-      <section class="description">
-        <div class="description__title">
+      <section class="card__description">
+        <div class="card__description-title">
           APPLE A1419 iMac 27" Retina 5K Monoblock (MNED2UA/A)
         </div>
 
-        <div class="description__code">Product code: 195434</div>
+        <div class="card__description-code">Product code: 195434</div>
+      </section>
 
-        <section class="reviews">
-          <div class="stars stars__stars--4">
-            <div class="stars__star"></div>
-            <div class="stars__star"></div>
-            <div class="stars__star"></div>
-            <div class="stars__star"></div>
-            <div class="stars__star"></div>
-          </div>
-          <span class="reviews__count">Reviews: 5</span>
-        </section>
+      <section class="card__reviews">
+        <div class="stars stars--4">
+          <div class="stars__star"></div>
+          <div class="stars__star"></div>
+          <div class="stars__star"></div>
+          <div class="stars__star"></div>
+          <div class="stars__star"></div>
+        </div>
 
-        <section class="price">
-          <div class="price__label">Price:</div>
-          <span class="price__value">$2,199</span>
-        </section>
+        <span class="card__reviews-count">Reviews: 5</span>
+      </section>
 
+      <section class="card__price">
+        <div class="card__price-label">Price:</div>
+
+        <span class="card__price-value">$2,199</span>
+      </section>
+
+      <section>
         <a
           href="#"
-          class="button"
+          class="card__button"
           data-qa="hover"
         >
           Buy

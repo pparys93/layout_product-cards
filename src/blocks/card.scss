@@ -3,28 +3,32 @@
 .card {
   display: flex;
   flex-direction: column;
+  padding: 0 16px 16px;
   width: 200px;
   border: 1px solid $color-border;
   border-radius: 5px;
   color: $color-font-major;
 
-  .product {
+  &__product {
     margin-top: 32px;
-    padding: 0 19px;
 
-    &__image {
+    margin-left: -16px;
+    margin-right: -16px;
+    padding-left: 19px;
+    padding-right: 19px;
+
+    &-image {
       width: 160px;
       height: 134px;
       display: block;
     }
   }
 
-  .description {
-    padding: 0 16px 16px;
+  &__description {
     display: flex;
     flex-direction: column;
 
-    &__title {
+    &-title {
       font-size: 12px;
       font-weight: 500;
       line-height: 18px;
@@ -37,7 +41,7 @@
       text-overflow: ellipsis;
     }
 
-    &__code {
+    &-code {
       font-size: 10px;
       font-weight: 400;
       color: $color-font-minor;
@@ -45,27 +49,39 @@
     }
   }
 
-  .price {
+  &__reviews {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+
+    &-count {
+      font-size: 10px;
+      font-weight: 400;
+    }
+  }
+
+  &__price {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 24px;
 
-    &__label {
+    &-label {
       font-size: 12px;
       line-height: 18px;
       font-weight: 400;
       color: $color-font-minor;
     }
 
-    &__value {
+    &-value {
       font-size: 16px;
       line-height: 18px;
       font-weight: 700;
     }
   }
 
-  .button {
+  &__button {
     display: flex;
     justify-content: center;
     align-items: center;
