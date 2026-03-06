@@ -44,6 +44,7 @@
     &-code {
       font-size: 10px;
       font-weight: 400;
+      line-height: 14px;
       color: $color-font-minor;
       margin-top: 4px;
     }
@@ -96,12 +97,11 @@
     text-decoration: none;
     margin-top: 16px;
     text-transform: uppercase;
-    border: 1px solid transparent;
+    border: 1px solid $color-button;
 
     &:hover {
       background-color: $color-reversed;
       color: $color-button;
-      border: 1px solid $color-button;
     }
   }
 }
